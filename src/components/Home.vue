@@ -3,6 +3,7 @@
     <div>
         <Header></Header>
         <Hero/>
+        <Cards/>
         <Footer></Footer>
     </div>
     
@@ -12,6 +13,7 @@
 
 import Header from './Header/Main.vue'
 import Hero from './Hero/Main.vue'
+import Cards from './Cards/Main.vue'
 import Footer from './Footer/Main.vue'
 
 export default {
@@ -24,6 +26,7 @@ export default {
   components: {
     Header,
     Hero,
+    Cards,
     Footer
   }
 }
