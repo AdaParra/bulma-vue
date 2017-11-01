@@ -3,9 +3,9 @@
     <div class="container is-fullhd">
       <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-          <a class="navbar-item">
+          <router-link :to="{ name: 'Home'}" class="navbar-item">
             <img src="../../assets/logo-4.png" width="160px" alt="Bulma and vuejs">
-          </a>
+          </router-link>
           <button class="button navbar-burger" :data-target="dataTarget">
             <span> </span>
             <span> </span>
