@@ -17,7 +17,7 @@
       <div class="container is-widescreen">
         <div class="columns" style="margin-top: 20px;">
           <div class="column is-two-thirds">
-              <img :src="detail.urldetail" width="720px" height="400px">
+              <iframe width="720px" height="400px" :src="detail.urlvideo" frameborder="0" allowfullscreen></iframe>
           </div>
           <div class="container"> 
 
@@ -277,7 +277,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss">
 
-  @import '../../../scss/main.scss'
+  @import '../../../scss/main.scss';
+  @import '../../../../node_modules/bulma-badge/badge.sass';
 
 </style>
 
