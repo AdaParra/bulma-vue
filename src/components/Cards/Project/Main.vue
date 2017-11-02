@@ -17,7 +17,7 @@
       <div class="container is-widescreen">
         <div class="columns" style="margin-top: 20px;">
           <div class="column is-two-thirds">
-              <img src="./assets/video.png" width="720px" height="400px">
+              <img :src="detail.urldetail" width="720px" height="400px">
           </div>
           <div class="container"> 
 
