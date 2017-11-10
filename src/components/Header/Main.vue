@@ -25,9 +25,10 @@
                 Proyectos
               </router-link>
 
-              <a class="navbar-item">
+              <router-link :to="{ name: 'About'}" class="navbar-item">
                 ¿Como Funciona?
-              </a>
+              </router-link>
+              
 
               <a class="navbar-item">
                 Preguntas Frecuentes
@@ -35,16 +36,18 @@
           </div>
       
         <div class="navbar-end">
-            <a class="navbar-item">
               <div class="buttons">
-                <span class="button is-success">Registrate</span>
+                <router-link :to="{ name: 'SignIn' }" class="navbar-item">
+                  <span class="button is-success">Registrate</span>
+                </router-link> 
               </div>
-            </a>
-            <a class="navbar-item">
+
               <div class="buttons">
-                <span class="button is-info">Iniciar Sesión</span>
+                <router-link :to="{ name: 'Login' }" class="navbar-item">
+                    <span class="button is-info">Iniciar Sesión</span>
+                </router-link>
               </div>
-            </a>
+            
           </div>
         </div>
       </nav>
