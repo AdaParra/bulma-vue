@@ -52,9 +52,11 @@
                          <span class="subtitle"> 00:09:10 </span>
                       </div>
 
+                      <router-link :to="{ name: 'Donate', params: { id: id, detail: detail }}">
                           <button class="button is-link is-fullwidth">
                             DONAR
                           </button>
+                      </router-link>
 
               </nav> 
 
@@ -131,9 +133,11 @@
                               </a>
                             </div>
                             <div class="level-right">
-                              <button class="button is-link ">
-                                DONAR
-                              </button>
+                              <router-link :to="{ name: 'Donate', params: { id: id, detail: detail }}">
+                                <button class="button is-link ">
+                                  DONAR
+                                </button>
+                              </router-link>
                             </div>
                           </nav>
                     </section>

@@ -18,7 +18,7 @@
                 <div class="field is-large">
                   <label class="label"> </label>
                   <div class="control  has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="Email">
+                    <input class="input is-large" type="email" placeholder="Email">
                      <span class="icon is-small is-left">
                       <i class="fa fa-envelope"></i>
                     </span>
@@ -34,7 +34,7 @@
                 <div class="field is-large">
                   <label class="label"> </label>
                   <div class="control  has-icons-left">
-                    <input class="input" type="password" placeholder="Contraseña">
+                    <input class="input is-large" type="password" placeholder="Contraseña">
                     <span class="icon is-small is-left">
                       <i class="fa fa-lock"></i>
                     </span>
@@ -47,7 +47,7 @@
               </div>
             </div>
             <div class="columns is-centered" style="margin-top:20px">
-              <button class="button is-link is-fullwidth">Enviar</button>
+              <button class="button is-link is-fullwidth is-large">INGRESAR</button>
             </div>
           </div>
 

@@ -18,13 +18,13 @@
                 <div class="field">
                   <label class="label">Nombre (s) </label>
                   <div class="control">
-                    <input class="input" type="text" placeholder="">
+                    <input class="input is-large" type="text" placeholder="">
                   </div>
                 </div>
                 <div class="field">
                   <label class="label"> Correo electrónico (ITESM) </label>
                   <div class="control  has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="">
+                    <input class="input is-large" type="email" placeholder="">
                      <span class="icon is-small is-left">
                       <i class="fa fa-envelope"></i>
                     </span>
@@ -36,7 +36,7 @@
                 <div class="field">
                   <label class="label"> Contraseña </label>
                   <div class="control  has-icons-left">
-                    <input class="input" type="password" placeholder="">
+                    <input class="input is-large" type="password" placeholder="">
                     <span class="icon is-small is-left">
                       <i class="fa fa-lock"></i>
                     </span>
@@ -45,12 +45,12 @@
                 <div class="field">
                   <label class="label"> Nómina </label>
                   <div class="control">
-                    <input class="input" type="text" placeholder="">
+                    <input class="input is-large" type="text" placeholder="">
                   </div>
                 </div>
                 <div class="field">
                   <label class="label"> Campus </label>
-                  <div class="select is-fullwidth">
+                  <div class="select is-fullwidth is-large">
                         <select>
                           <option></option>
                           <option></option>
@@ -65,13 +65,13 @@
                 <div class="field">
                   <label class="label">Apellido (s)</label>
                   <div class="control">
-                    <input class="input" type="text" placeholder="">
+                    <input class="input is-large" type="text" placeholder="">
                   </div>
                 </div>
                 <div class="field">
                   <label class="label"> Confirma correo electrónico </label>
                   <div class="control  has-icons-left has-icons-right">
-                    <input class="input" type="email" placeholder="">
+                    <input class="input is-large" type="email" placeholder="">
                      <span class="icon is-small is-left">
                       <i class="fa fa-envelope"></i>
                     </span>
@@ -83,7 +83,7 @@
                 <div class="field">
                   <label class="label"> Confirmar Contraseña </label>
                   <div class="control  has-icons-left">
-                    <input class="input" type="password" placeholder="">
+                    <input class="input is-large" type="password" placeholder="">
                     <span class="icon is-small is-left">
                       <i class="fa fa-lock"></i>
                     </span>
@@ -92,13 +92,13 @@
                 <div class="field">
                   <label class="label"> Puesto </label>
                   <div class="control">
-                    <input class="input" type="text" placeholder="">
+                    <input class="input is-large" type="text" placeholder="">
                   </div>
                 </div>
                 <div class="field">
                   <label class="label"> Socio (Director del campus) </label>
                   <div class="control">
-                    <input class="input" type="text" placeholder="">
+                    <input class="input is-large" type="text" placeholder="">
                   </div>
                 </div>
               </div>
@@ -108,7 +108,7 @@
               <div class="column">
                 <div class="file has-name is-fullwidth">
                   <label class="file-label">
-                    <input class="file-input" type="file" name="resume">
+                    <input class="file-input is-large" type="file" name="resume">
                     <span class="file-cta">
                       <span class="file-icon">
                         <i class="fa fa-upload"></i>
