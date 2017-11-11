@@ -2,14 +2,14 @@
 
     <div>
         <Header></Header>
-        <section class="hero is-primary">
+        <section class="hero is-primary has-text-centered">
           <div class="hero-body">
             <div class="container">
               <h1 class="title">
-                Has decidido apoyar esta causa
+                {{ detail.name }}
               </h1>
               <h2 class="subtitle">
-                {{ detail.name }}
+                {{ detail.subtitle }}
               </h2>
             </div>
           </div>
@@ -19,132 +19,92 @@
         
           <div class="container">
 
-            <h1 class="title">Tarjeto crédito/débito</h1>
-            <div class="columns">
-              <div class="column">
-                <div class="field">
-                  <label class="label"> Nombre del Tarjehabiente </label>
-                  <div class="control">
-                    <input class="input is-large" type="text" placeholder="">
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label"> Calle y número </label>
-                  <div class="control">
-                    <input class="input is-large" type="text" placeholder="">
-                  </div>
-                </div>
-
-                <div class="field">
-                  <label class="label"> Número de Tarjeta </label>
-                  <div class="control has-icons-left">
-                    <input class="input is-large" type="text" placeholder="">
-                        <span class="icon is-small is-left">
-                          <i class="fa fa-cc-visa"></i>
-                        </span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="column">
-                <div class="field">
-                  <label class="label"> Teléfono </label>
-                  <div class="control">
-                    <input class="input is-large" type="text" placeholder="">
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label"> Código postal </label>
-                  <div class="control">
-                    <input class="input is-large" type="text" placeholder="">
-                  </div>
-                </div>
-                <div class="field">
-                  <div class="columns">
-                    <div class="column">
-                      <label class="label"> Fecha de vencimiento </label>
-                      <div class="control  has-icons-left">
-                        <input class="input is-large" type="text" placeholder="">
-                        <span class="icon is-small is-left">
-                          <i class="fa fa-calendar"></i>
-                        </span>
-                      </div>
-                    </div>
-                    <div class="column">
-                      <label class="label"> Codigo de Seguridad </label>
-                      <div class="control">
-                        <input class="input is-large" type="number" placeholder="">
-                      </div>  
+            <h1 class="title">Donación Rápida</h1>
+            <div class="columns" style="margin-left: 2.5rem;">
+                
+                <div class="column is-5 has-text-letf">
+                  <div class="field">
+                    <div class="control">
+                      <input class="input is-large" type="text" placeholder="$">
                     </div>
                   </div>
                 </div>
-              </div>
+                <div class="column is-5 has-text-letf">
+                  <div class="field">
+                    
+                    <div class="select is-fullwidth is-large">
+                          <select placeholder="Campus">
+                            <option> Campus </option>
+                            <option> Campus </option>
+                          </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="column is-2">
+                <router-link :to="{ name: 'Payment', params: { id: id, detail: detail }}">
+                  <button class="button is-link is-large">DONAR</button>
+                </router-link>
+                </div>
             </div>
-            <h1 class="title">Datos del donante</h1>
-            <div class="columns">
-              <div class="column">
-                <div class="field">
-                  <label class="label">Nombre (s) </label>
-                  <div class="control">
-                    <input class="input is-large" type="text" placeholder="">
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label"> Correo electrónico </label>
-                  <div class="control  has-icons-left has-icons-right">
-                    <input class="input is-large" type="email" placeholder="">
-                     <span class="icon is-small is-left">
-                      <i class="fa fa-envelope"></i>
-                    </span>
-                    <span class="icon is-small is-right">
-                      <i class="fa fa-check"></i>
-                    </span>
-                  </div>
+            <div class="marginButton is-hidden-mobile"></div>
+            <div class="columns classBorder" style="margin-bottom: 2.5rem;">
+                
+                <div class="column is-9 has-text-letf" style="margin-left: 2.5rem;">
+                  <h1 class="subtitle"> Donar 100 MXN </h1>
+                  <p class="has-text-justify"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip</p>
                 </div>
 
-                <div class="field">
-                  <label class="label"> Campus </label>
-                  <div class="select is-fullwidth is-large">
-                        <select>
-                          <option></option>
-                          <option></option>
-                        </select>
-                  </div>
+                <div class="column is-3 has-text-centered">
+                  <div class="marginButton is-hidden-mobile"></div>
+                  <router-link :to="{ name: 'Payment', params: { id: id, detail: detail }}">
+                    <button class="button is-link is-large">DONAR</button>
+                  </router-link>
                 </div>
-
-
-              </div>
-
-              <div class="column">
-                <div class="field">
-                  <label class="label">Apellido (s)</label>
-                  <div class="control">
-                    <input class="input is-large" type="text" placeholder="">
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label"> Confirma correo electrónico </label>
-                  <div class="control  has-icons-left has-icons-right">
-                    <input class="input is-large" type="email" placeholder="">
-                     <span class="icon is-small is-left">
-                      <i class="fa fa-envelope"></i>
-                    </span>
-                        <span class="icon is-small is-right">
-                          <i class="fa fa-check"></i>
-                        </span>
-                  </div>
-                </div>
-                <div class="field">
-                  <label class="label"> Matricula </label>
-                  <div class="control">
-                    <input class="input is-large" type="text" placeholder="">
-                  </div>
-                </div>
-
-              </div>
             </div>
-            <div class="columns is-mobile is-centered">
-                <button class="button is-link is-large">ENVIAR</button>
+
+            <div class="columns classBorder" style="margin-bottom: 2.5rem;">
+                
+                <div class="column is-9 has-text-letf" style="margin-left: 2.5rem;">
+                  <h1 class="subtitle"> Donar 500 MXN </h1>
+                  <p class="has-text-justify"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip</p>
+                </div>
+
+                <div class="column is-3 has-text-centered">
+                  <div class="marginButton is-hidden-mobile"></div>
+                  <router-link :to="{ name: 'Payment', params: { id: id, detail: detail }}">
+                    <button class="button is-link is-large">DONAR</button>
+                  </router-link>
+                </div>
+            </div>
+
+            <div class="columns classBorder" style="margin-bottom: 2.5rem;">
+                
+                <div class="column is-9 has-text-letf" style="margin-left: 2.5rem;">
+                  <h1 class="subtitle"> Donar 1000 MXN </h1>
+                  <p class="has-text-justify"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip</p>
+                </div>
+
+                <div class="column is-3 has-text-centered">
+                  <div class="marginButton is-hidden-mobile"></div>
+                  <router-link :to="{ name: 'Payment', params: { id: id, detail: detail }}">
+                    <button class="button is-link is-large">DONAR</button>
+                  </router-link>
+                </div>
+            </div>
+
+            <div class="columns classBorder" style="margin-bottom: 2.5rem;">
+                
+                <div class="column is-9 has-text-letf" style="margin-left: 2.5rem;">
+                  <h1 class="subtitle"> Donar 2000 MXN </h1>
+                  <p class="has-text-justify"> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip</p>
+                </div>
+
+                <div class="column is-3 has-text-centered">
+                  <div class="marginButton is-hidden-mobile"></div>
+                  <router-link :to="{ name: 'Payment', params: { id: id, detail: detail }}">
+                    <button class="button is-link is-large">DONAR</button>
+                  </router-link>
+                </div>
             </div>
 
           </div>
@@ -188,4 +148,15 @@ export default {
 
   @import '../../scss/main.scss'
 
+</style>
+
+<style type="text/css">
+  .marginButton{
+    margin-top: 3rem;
+  }
+  .classBorder{
+    margin-bottom: 2.5rem;
+    border: solid 1px lightgrey;
+    border-radius: 10px;
+  }
 </style>
